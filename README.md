@@ -1,7 +1,9 @@
 Monoalphabetic Cipher
+
 A simple, command-line tool for encrypting and decrypting text using the Monoalphabetic Substitution Cipher. This project is intended for educational purposes to demonstrate a basic cryptographic concept.
 
 What is a Monoalphabetic Cipher?
+
 A monoalphabetic substitution cipher is a classic encryption technique where each letter in the plaintext (the original message) is consistently replaced with a different letter from the alphabet. The "key" for this cipher is the mapping of each letter to its substitute. For this to work, the key must be a permutation of the alphabet, meaning every letter of the alphabet must be present exactly once.
 
 For example, if 'a' is encrypted to 'q', then every time 'a' appears in the plaintext, it will be replaced by 'q' in the ciphertext.
@@ -22,15 +24,19 @@ Decrypt: Revert ciphertext back to the original plaintext using the same key.
 Cross-platform: Written in Python, it runs on any system with Python installed.
 
 Getting Started
+
 Prerequisites
+
 Python 3.x
 
 Usage
+
 To use the tool, simply run the Python script from your terminal. The program will prompt you to enter the text you wish to encrypt.
 
 python MonoalphabeticCipher.py
 
 Code Breakdown
+
 The script is divided into three main functions and an execution block that ties them together.
 
 generate_key_mapping()
@@ -92,6 +98,7 @@ Main Execution
 This is the part of the script that runs when the file is executed.
 
 # Main Execution
+
 plain_text = input("Enter Plain Text: ")
 key_map, reverse_key_map = generate_key_mapping()
 
